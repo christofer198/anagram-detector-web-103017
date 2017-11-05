@@ -10,7 +10,7 @@ class Anagram
   def match(phrase)
     match_case = @word.downcase.split('').sort
     phrase.each{|x| return x if x.downcase.split('').sort==match_case}
-    return "No Anagram present"
+    return []
     #binding.pry
     #phrase_array = phrase.split
   end
