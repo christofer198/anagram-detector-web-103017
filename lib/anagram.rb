@@ -9,7 +9,8 @@ class Anagram
 
   def match(phrase)
     match_case = @word.downcase.split('').sort
-    anagram = phrase.detect{|x| x if x.downcase.split('').sort==match_case}
+    anagram = []
+    anagram << phrase.detect{|x| x if x.downcase.split('').sort==match_case}
     return anagram
     #binding.pry
     #phrase_array = phrase.split
